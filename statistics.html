@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Средний возраст</td>
+            <td>{{ all_info['age_mean'] }}</td>
+        </tr>
+        <tr>
+            <td>Минимальный возраст</td>
+            <td>{{ all_info['age_min'] }}</td>
+        </tr>
+        <tr>
+            <td>Максимальный возраст</td>
+            <td>{{ all_info['age_max'] }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос о загруженности</td>
+            <td>{{ all_info['q1_mean'] }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос о новогоднем настроении</td>
+            <td>{{ all_info['q2_mean'] }}</td>
+        </tr>
+        <tr>
+            <td>Средняя оценка настроения тех, кто загружен:</td>
+            <td>{{ all_info['mood_tiredness45'] }}</td>
+        </tr>
+        <tr>
+            <td>Средняя оценка настроения тех, кто не загружен:</td>
+            <td>{{ all_info['mood_tiredness12'] }}</td>
+        </tr>
+        <tr>
+            <td>Сколько людей прошло опрос:</td>
+            <td>{{ all_info['total_count'] }}</td>
+        </tr>
+    </table>
+</body>
+</html>
